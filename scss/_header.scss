@@ -1,0 +1,32 @@
+.header {
+  letter-spacing: 1.5px;
+  background-color: $navGreen;
+  text-transform: uppercase;
+  padding: 2rem;
+  width: 100%;
+  
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include breakpoint-up(medium) {
+      max-width: 75%;
+    }
+
+    @include breakpoint-up(large) {
+      justify-content: flex-end;
+    
+    }
+    a {
+      font-size: $font-small;
+
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

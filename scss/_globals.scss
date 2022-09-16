@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  font-family: "Public Sans", sans-serif;
+  color: $white;
+  overflow-x: hidden;
+  background-color: $bgGray;
+  @include breakpoint-up(large) {
+    
+  }
+
+  &.noscroll {
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: $white;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
